@@ -1,0 +1,170 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Movimiento Service API",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8080"
+    }
+  ],
+  "paths": {
+    "/movimientos": {
+      "get": {
+        "summary": "Obtener todos los movimientos",
+        "responses": {
+          "200": {
+            "description": "Lista de movimientos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Movimiento"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Crear un nuevo movimiento",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Movimiento"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Movimiento creado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Movimiento"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/movimientos/{movimientoId}": {
+      "get": {
+        "summary": "Obtener un movimiento por ID",
+        "parameters": [
+          {
+            "name": "movimientoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Movimiento encontrado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Movimiento"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Movimiento no encontrado"
+          }
+        }
+      },
+      "put": {
+        "summary": "Actualizar un movimiento",
+        "parameters": [
+          {
+            "name": "movimientoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Movimiento"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Movimiento actualizado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Movimiento"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Eliminar un movimiento",
+        "parameters": [
+          {
+            "name": "movimientoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Movimiento eliminado"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Movimiento": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "fecha": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "tipoMovimiento": {
+            "type": "string",
+            "enum": [
+              "DEPOSITO",
+              "RETIRO",
+              "PAGO"
+            ]
+          },
+          "monto": {
+            "type": "number",
+            "format": "double"
+          }
+        }
+      }
+    }
+  }
+}

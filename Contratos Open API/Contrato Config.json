@@ -1,0 +1,52 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Config Server API",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8880"
+    }
+  ],
+  "paths": {
+    "/config/{application}/{profile}": {
+      "get": {
+        "summary": "Obtener configuración para una aplicación y perfil",
+        "parameters": [
+          {
+            "name": "application",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "profile",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Configuración encontrada",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Configuración no encontrada"
+          }
+        }
+      }
+    }
+  }
+}

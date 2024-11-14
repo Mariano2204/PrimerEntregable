@@ -1,0 +1,134 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="2YBvvXClWsGukQMizWep">
+    <mxGraphModel dx="880" dy="524" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="aM9ryv3xv72pqoxQDRHE-1" value="Cliente" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="40" y="40" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="aM9ryv3xv72pqoxQDRHE-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="aM9ryv3xv72pqoxQDRHE-1" vertex="1">
+          <mxGeometry x="45" y="70" width="10" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="aM9ryv3xv72pqoxQDRHE-3" value="dispatch" style="html=1;verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="aM9ryv3xv72pqoxQDRHE-1" target="aM9ryv3xv72pqoxQDRHE-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-15" y="70" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aM9ryv3xv72pqoxQDRHE-4" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="aM9ryv3xv72pqoxQDRHE-1" vertex="1">
+          <mxGeometry x="50" y="120" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="aM9ryv3xv72pqoxQDRHE-5" value="Microservicio de clientes" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="220" y="40" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="aM9ryv3xv72pqoxQDRHE-6" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="aM9ryv3xv72pqoxQDRHE-5" vertex="1">
+          <mxGeometry x="45" y="80" width="10" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="aM9ryv3xv72pqoxQDRHE-7" value="POST / Clientes" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;" parent="1" source="aM9ryv3xv72pqoxQDRHE-2" target="aM9ryv3xv72pqoxQDRHE-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="195" y="130" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="180" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aM9ryv3xv72pqoxQDRHE-8" value="Respuesta Cliente" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;startArrow=classic;startFill=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="95" y="290" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="190" y="290" />
+            </Array>
+            <mxPoint x="265" y="290" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SPuDN5imYYzWHC8RdEq--1" value="Microservicio de cuentas bancarias" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="400" y="40" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="SPuDN5imYYzWHC8RdEq--2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="SPuDN5imYYzWHC8RdEq--1">
+          <mxGeometry x="46" y="80" width="10" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="SPuDN5imYYzWHC8RdEq--3" value="Microservicio de créditos" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="582" y="40" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="SPuDN5imYYzWHC8RdEq--4" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="SPuDN5imYYzWHC8RdEq--3">
+          <mxGeometry x="45" y="80" width="10" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="SPuDN5imYYzWHC8RdEq--5" value="Crear Cliente" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="442" y="133" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="357" y="133" />
+            </Array>
+            <mxPoint x="277" y="133" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SPuDN5imYYzWHC8RdEq--6" value="Cliente creado" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="275" y="159" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="370" y="159" />
+            </Array>
+            <mxPoint x="445" y="159" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SPuDN5imYYzWHC8RdEq--7" value="POST / Cuentas" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="276" y="184" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="361" y="184" />
+            </Array>
+            <mxPoint x="446" y="184" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SPuDN5imYYzWHC8RdEq--8" value="POST / Créditos" style="html=1;verticalAlign=bottom;endArrow=baseDash;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;strokeWidth=1;endFill=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="276" y="239" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="361" y="239" />
+            </Array>
+            <mxPoint x="446" y="239" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SPuDN5imYYzWHC8RdEq--9" value="Crear Cuenta" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="623" y="200" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="538" y="200" />
+            </Array>
+            <mxPoint x="458" y="200" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SPuDN5imYYzWHC8RdEq--10" value="Cuenta creada" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="456" y="222" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="551" y="222" />
+            </Array>
+            <mxPoint x="626" y="222" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SPuDN5imYYzWHC8RdEq--11" value="Crear Crédito" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="803" y="256" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="718" y="256" />
+            </Array>
+            <mxPoint x="638" y="256" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SPuDN5imYYzWHC8RdEq--12" value="Crédito creado" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="637" y="277" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="732" y="277" />
+            </Array>
+            <mxPoint x="807" y="277" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SPuDN5imYYzWHC8RdEq--16" value="&lt;h3&gt;&lt;strong&gt;Escenario: Crear un cliente y asociar productos bancarios&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;Este escenario implica la creación de un cliente (personal o empresarial) y la asociación de productos bancarios como cuentas y créditos.&lt;/p&gt;&lt;h4&gt;&lt;strong&gt;Microservicios involucrados:&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Microservicio de Clientes&lt;/strong&gt; (para crear el cliente).&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Microservicio de Cuentas Bancarias&lt;/strong&gt; (para crear una cuenta bancaria asociada al cliente).&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Microservicio de Créditos&lt;/strong&gt; (para crear un crédito asociado al cliente).&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;&lt;strong&gt;Flujo de interacción:&lt;/strong&gt;&lt;/h4&gt;&lt;ol&gt;&lt;li&gt;&lt;strong&gt;Cliente&lt;/strong&gt; (usuario o sistema administrativo) realiza una solicitud &lt;strong&gt;POST&lt;/strong&gt; para crear un cliente (en el &lt;strong&gt;Microservicio de Clientes&lt;/strong&gt;).&lt;/li&gt;&lt;li&gt;El &lt;strong&gt;Microservicio de Clientes&lt;/strong&gt; crea el cliente y devuelve un ID.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Cliente&lt;/strong&gt; solicita la creación de una cuenta bancaria (por ejemplo, una cuenta corriente) en el &lt;strong&gt;Microservicio de Cuentas Bancarias&lt;/strong&gt;.&lt;/li&gt;&lt;li&gt;El &lt;strong&gt;Microservicio de Cuentas Bancarias&lt;/strong&gt; crea la cuenta y devuelve la información de la cuenta creada.&lt;/li&gt;&lt;li&gt;Si el cliente es elegible para un crédito, el &lt;strong&gt;Microservicio de Créditos&lt;/strong&gt; se encarga de crear un crédito asociado (personal o empresarial).&lt;/li&gt;&lt;li&gt;El &lt;strong&gt;Microservicio de Créditos&lt;/strong&gt; devuelve la información del crédito creado.&lt;/li&gt;&lt;/ol&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="360" width="560" height="400" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

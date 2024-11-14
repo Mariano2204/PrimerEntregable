@@ -1,0 +1,199 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Cuenta Bancaria Service API",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8080"
+    }
+  ],
+  "paths": {
+    "/cuentas": {
+      "get": {
+        "summary": "Obtener todas las cuentas bancarias",
+        "responses": {
+          "200": {
+            "description": "Lista de cuentas bancarias",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CuentaBancaria"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Crear una nueva cuenta bancaria",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CuentaBancaria"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Cuenta bancaria creada",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CuentaBancaria"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/cuentas/{cuentaId}": {
+      "get": {
+        "summary": "Obtener una cuenta bancaria por ID",
+        "parameters": [
+          {
+            "name": "cuentaId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Cuenta bancaria encontrada",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CuentaBancaria"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Cuenta bancaria no encontrada"
+          }
+        }
+      },
+      "put": {
+        "summary": "Actualizar una cuenta bancaria",
+        "parameters": [
+          {
+            "name": "cuentaId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CuentaBancaria"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Cuenta bancaria actualizada",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CuentaBancaria"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Eliminar una cuenta bancaria",
+        "parameters": [
+          {
+            "name": "cuentaId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Cuenta bancaria eliminada"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CuentaBancaria": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "numeroCuenta": {
+            "type": "string"
+          },
+          "tipoCuenta": {
+            "type": "string",
+            "enum": [
+              "AHORRO",
+              "CORRIENTE",
+              "PLAZO_FIJO"
+            ]
+          },
+          "saldo": {
+            "type": "number",
+            "format": "double"
+          },
+          "movimientos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Movimiento"
+            }
+          }
+        }
+      },
+      "Movimiento": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "fecha": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "tipoMovimiento": {
+            "type": "string",
+            "enum": [
+              "DEPOSITO",
+              "RETIRO",
+              "PAGO"
+            ]
+          },
+          "monto": {
+            "type": "number",
+            "format": "double"
+          }
+        }
+      }
+    }
+  }
+}

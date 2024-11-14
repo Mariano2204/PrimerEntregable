@@ -1,0 +1,102 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="2YBvvXClWsGukQMizWep">
+    <mxGraphModel dx="864" dy="508" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="iaFFKfAGbCPKaMlXtrOD-1" value="Cliente" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="50" y="50" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="iaFFKfAGbCPKaMlXtrOD-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="iaFFKfAGbCPKaMlXtrOD-1">
+          <mxGeometry x="45" y="70" width="10" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="iaFFKfAGbCPKaMlXtrOD-3" value="dispatch" style="html=1;verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="iaFFKfAGbCPKaMlXtrOD-1" target="iaFFKfAGbCPKaMlXtrOD-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-15" y="70" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iaFFKfAGbCPKaMlXtrOD-4" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="iaFFKfAGbCPKaMlXtrOD-1">
+          <mxGeometry x="50" y="120" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="iaFFKfAGbCPKaMlXtrOD-7" value="POST / cuentas / {id} / movimiento" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="105" y="131" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="190" y="131" />
+            </Array>
+            <mxPoint x="468.5" y="131" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iaFFKfAGbCPKaMlXtrOD-9" value="Microservicio de cuentas bancarias" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="230" y="50" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="iaFFKfAGbCPKaMlXtrOD-10" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="iaFFKfAGbCPKaMlXtrOD-9">
+          <mxGeometry x="46" y="80" width="10" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="iaFFKfAGbCPKaMlXtrOD-11" value="Microservicio de movimientos" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="424" y="50" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="iaFFKfAGbCPKaMlXtrOD-12" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="iaFFKfAGbCPKaMlXtrOD-11">
+          <mxGeometry x="45" y="80" width="10" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="iaFFKfAGbCPKaMlXtrOD-15" value="Movimiento válido" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="iaFFKfAGbCPKaMlXtrOD-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="286" y="183" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="381" y="183" />
+            </Array>
+            <mxPoint x="456" y="183" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iaFFKfAGbCPKaMlXtrOD-16" value="Validar movimiento" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;strokeWidth=1;endFill=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="286" y="158" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="371" y="158" />
+            </Array>
+            <mxPoint x="470" y="158" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iaFFKfAGbCPKaMlXtrOD-17" value="Actualizar saldo" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;strokeWidth=1;endFill=0;dashed=1;" edge="1" parent="1" target="iaFFKfAGbCPKaMlXtrOD-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="287" y="214" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="372" y="214" />
+            </Array>
+            <mxPoint x="457" y="214" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iaFFKfAGbCPKaMlXtrOD-18" value="Saldo actualizado" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="iaFFKfAGbCPKaMlXtrOD-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="286" y="236" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="381" y="236" />
+            </Array>
+            <mxPoint x="456" y="236" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iaFFKfAGbCPKaMlXtrOD-19" value="POST movimientos" style="html=1;verticalAlign=bottom;endArrow=open;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;strokeWidth=1;endFill=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="287" y="267" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="372" y="267" />
+            </Array>
+            <mxPoint x="469" y="267" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iaFFKfAGbCPKaMlXtrOD-20" value="Movimiento registrado" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="285" y="289" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="380" y="289" />
+            </Array>
+            <mxPoint x="468" y="289" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iaFFKfAGbCPKaMlXtrOD-21" value="&lt;h3&gt;&lt;strong&gt;Escenario: Realizar un movimiento bancario (Depósito o Retiro)&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;Este escenario cubre un depósito o retiro en una cuenta bancaria.&lt;/p&gt;&lt;h4&gt;&lt;strong&gt;Microservicios involucrados:&lt;/strong&gt;&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Microservicio de Cuentas Bancarias&lt;/strong&gt; (para realizar el movimiento).&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Microservicio de Movimientos&lt;/strong&gt; (para registrar el movimiento de la cuenta).&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;&lt;strong&gt;Flujo de interacción:&lt;/strong&gt;&lt;/h4&gt;&lt;ol&gt;&lt;li&gt;&lt;strong&gt;Cliente&lt;/strong&gt; realiza una solicitud &lt;strong&gt;POST&lt;/strong&gt; al &lt;strong&gt;Microservicio de Cuentas Bancarias&lt;/strong&gt; para realizar un depósito o retiro.&lt;/li&gt;&lt;li&gt;El &lt;strong&gt;Microservicio de Cuentas Bancarias&lt;/strong&gt; valida la operación (por ejemplo, asegurarse de que el saldo sea suficiente para un retiro).&lt;/li&gt;&lt;li&gt;Si la operación es válida, el &lt;strong&gt;Microservicio de Cuentas Bancarias&lt;/strong&gt; realiza la modificación en la cuenta.&lt;/li&gt;&lt;li&gt;El &lt;strong&gt;Microservicio de Movimientos&lt;/strong&gt; registra el movimiento (depósito o retiro) realizado.&lt;/li&gt;&lt;/ol&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="360" width="560" height="320" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
